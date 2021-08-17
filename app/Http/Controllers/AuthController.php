@@ -38,7 +38,8 @@ class AuthController extends Controller
             'message'=>'Login Successful'
          ];
 
-        return response($response,201);
+        //return response($response,201);
+        return json_encode($response,201);
  
     }
 
