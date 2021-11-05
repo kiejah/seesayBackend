@@ -35,11 +35,12 @@ class AuthController extends Controller
             'user'=>$user,
             'token'=>$token,
             'password'=>bcrypt($fields['password']),
-            'message'=>'Login Successful'
+            'message'=>'Login Successful',
          ];
+       
 
-        //return response($response,201);
-        return json_encode($response,201);
+        return response($response,201);
+        
  
     }
 
